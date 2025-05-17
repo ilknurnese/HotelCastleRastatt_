@@ -3,7 +3,6 @@ package utilities;
 import com.github.javafaker.Faker;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Locale;
 import java.util.Properties;
@@ -12,7 +11,7 @@ public class ConfigReader {
 
     private static Properties properties = new Properties();
     static Faker faker = new Faker(new Locale("en-US"));
-    private static final String configFilePath = "configuration.properties";
+    private static final String configFilePath = "src/configuration.properties";
 
     static {
         try {
