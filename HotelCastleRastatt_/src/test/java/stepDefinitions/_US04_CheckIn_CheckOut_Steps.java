@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import pages.CheckIn_CheckOutPOM;
+import pages.DialogContent;
 import utilities.ConfigReader;
 import utilities.GWD;
 
@@ -17,9 +17,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class CheckIn_CheckOut_Steps {
+public class _US04_CheckIn_CheckOut_Steps {
 
-    CheckIn_CheckOutPOM cc = new CheckIn_CheckOutPOM();
+    DialogContent cc = new DialogContent();
     LocalDate today = LocalDate.now();
     YearMonth currentMonth = YearMonth.now();
     int dayOfMonth = today.getDayOfMonth();
